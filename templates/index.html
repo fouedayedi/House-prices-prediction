@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin-left: 80px;">House Price Prediction</h1>
+    <form action="/sub" method="post">
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" name="city" placeholder="city">
+          </div>
+          <div class="form-group col-md-8">
+            <label for="inputsize">Area</label>
+            <input type="number" class="form-control" name="size" placeholder="size">
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="inputN1">Room count</label>
+                <input type="number" class="form-control" name="Room_count" placeholder="Room count">
+              </div>
+              <div class="form-group col-md-8">
+                <label for="inputN2">Bathroom count</label>
+                <input type="tnumber" class="form-control" name="bathroom_count" placeholder="Bathroom count">
+              </div>
+        </div>
+       
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputType">Type</label>
+            <select class="form-control" id="type" name="type" aria-placeholder="type">
+                <option value="À Vendre">À Vendre</option>
+                <option value="À Louer">À Louer</option>
+            </select>
+          </div><br><br>
+          <div class="form-group col-md-4">
+            <label for="Category">Choose a Category:</label><br>
+            <select id="Category" class="form-control" name="Category" aria-placeholder="Category"><br>
+                <option value="Maisons et Villas">Maisons et Villas</option>
+                <option value="Appartements">Appartements</option>
+                <option value="Magasins">Magasins</option>
+                <option value="Colocations">Colocations</option>
+                <option value="Locations de vacances">Locations de vacances</option>
+                <option value="Bureaux et Plateaux">Bureaux et Plateaux</option>
+            </select>
+          </div><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Predict</button>
+    </form>
+</body>
+</html>
+
